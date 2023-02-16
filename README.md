@@ -1,0 +1,2 @@
+CSE 582: Natural Language Processing Homeworks and Projects
+This repository contains the assignments, homeworks and projects for the course CSE 582: Natural Language Processing (Spring 2023), offered at Penn State University, University Park.

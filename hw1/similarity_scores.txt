@@ -1,0 +1,271 @@
+Enter word or sentence (EXIT to break): 
+Word: she  Position in vocabulary: 66
+
+                                              Word       Cosine distance
+------------------------------------------------------------------------
+                                               her		0.802637
+                                           herself		0.704842
+                                            mother		0.639546
+                                                he		0.624361
+                                             woman		0.620377
+                                           husband		0.612804
+                                          daughter		0.586886
+                                              hers		0.585864
+                                              girl		0.547014
+                                       grandmother		0.537414
+                                               him		0.520840
+                                               mum		0.520523
+                                                me		0.519655
+                                           someone		0.510266
+                                             never		0.501760
+                                         boyfriend		0.499176
+                                               mrs		0.495663
+                                                my		0.492021
+                                               mom		0.477242
+                                                 i		0.476759
+                                            sister		0.467396
+                                                ms		0.467085
+                                         tearfully		0.467043
+                                          teenager		0.463907
+                                          mentwabe		0.452783
+                                              wife		0.449614
+                                              aunt		0.441287
+                                        babysitter		0.439117
+                                             aunty		0.438426
+                                            friend		0.437483
+                                           fiancé		0.436832
+                                            father		0.435557
+                                            myself		0.434201
+                                              when		0.433530
+                                          somebody		0.429229
+                                               dad		0.427866
+                                           choongh		0.423739
+                                            makola		0.423050
+                                        gilderdale		0.422752
+                                        schoolgirl		0.420433
+Enter word or sentence (EXIT to break): 
+Word: like  Position in vocabulary: 96
+
+                                              Word       Cosine distance
+------------------------------------------------------------------------
+                                             weird		0.567077
+                                             maybe		0.553779
+                                            really		0.549899
+                                             crazy		0.538014
+                                          nowadays		0.532587
+                                              nice		0.525762
+                                        everywhere		0.517267
+                                              sort		0.514611
+                                              kind		0.513738
+                                            pretty		0.512081
+                                              icky		0.511013
+                                             stuff		0.509933
+                                             likes		0.509554
+                                             silly		0.508209
+                                           suppose		0.500998
+                                               you		0.498895
+                                               odd		0.496851
+                                             nicer		0.495710
+                                              look		0.492644
+                                           anymore		0.490350
+                                              cute		0.489956
+                                           imagine		0.489744
+                                               bit		0.489546
+                                            always		0.488124
+                                          gimmicky		0.485315
+                                              okay		0.482711
+                                           strange		0.481857
+                                            groovy		0.481093
+                                             guess		0.478332
+                                             drool		0.478026
+                                             cuter		0.476120
+                                               don		0.473393
+                                            wonder		0.471052
+                                          actually		0.469880
+                                              know		0.469350
+                                            cutesy		0.468558
+                                            boring		0.468075
+                                             loves		0.467706
+                                               yes		0.466361
+                                                 ?		0.466210
+Enter word or sentence (EXIT to break): 
+Word: cat  Position in vocabulary: 4488
+
+                                              Word       Cosine distance
+------------------------------------------------------------------------
+                                              cats		0.662273
+                                             tabby		0.606123
+                                            feline		0.590908
+                                               dog		0.584849
+                                          doberman		0.569035
+                                           felines		0.562942
+                                           kittens		0.558483
+                                            kitten		0.541868
+                                           raccoon		0.540937
+                                               pug		0.530002
+                                          declawed		0.525073
+                                        pomeranian		0.522115
+                                            poodle		0.515475
+                                           scaredy		0.511036
+                                              mutt		0.507743
+                                              paws		0.505502
+                                           hamster		0.498100
+                                             mangy		0.497888
+                                               pet		0.497737
+                                            serval		0.494527
+                                         shorthair		0.492624
+                                             furry		0.490247
+                                            rodent		0.488777
+                                         tarantula		0.486683
+                                         retriever		0.485702
+                                             frise		0.484109
+                                             pooch		0.482993
+                                           poodles		0.480450
+                                           meowing		0.477470
+                                         dachshund		0.477351
+                                           spaniel		0.476994
+                                            rabbit		0.476912
+                                          pinscher		0.475961
+                                             puppy		0.475730
+                                             doggy		0.475696
+                                             moggy		0.470957
+                                          labrador		0.470887
+                                              fido		0.470345
+                                        rottweiler		0.465965
+                                         cockatiel		0.465767
+Enter word or sentence (EXIT to break): 
+Word: dog  Position in vocabulary: 1927
+
+                                              Word       Cosine distance
+------------------------------------------------------------------------
+                                              dogs		0.784103
+                                             puppy		0.670249
+                                          doberman		0.653187
+                                             pooch		0.647549
+                                         dachshund		0.636515
+                                            canine		0.634291
+                                          labrador		0.620647
+                                           terrier		0.618399
+                                               pug		0.611830
+                                           canines		0.611336
+                                             doggy		0.604951
+                                         pekingese		0.602548
+                                         labradors		0.601309
+                                           pooches		0.597655
+                                               pup		0.596904
+                                         schnauzer		0.596060
+                                             frise		0.595035
+                                        rottweiler		0.593665
+                                            doggie		0.593296
+                                              mutt		0.592601
+                                        pomeranian		0.592410
+                                         retriever		0.589202
+                                           puppies		0.588413
+                                           lurcher		0.587540
+                                               cat		0.584850
+                                           poodles		0.581901
+                                               pet		0.581329
+                                           leashed		0.575067
+                                           spaniel		0.566201
+                                             hound		0.561512
+                                              paws		0.557123
+                                             yappy		0.556428
+                                        chihuahuas		0.552962
+                                            poodle		0.552370
+                                       rottweilers		0.551401
+                                            bichon		0.549166
+                                          sheepdog		0.548639
+                                        dachshunds		0.547748
+                                         dobermans		0.545427
+                                             mangy		0.543260
+Enter word or sentence (EXIT to break): 
+Word: man  Position in vocabulary: 184
+
+                                              Word       Cosine distance
+------------------------------------------------------------------------
+                                             woman		0.758578
+                                          teenager		0.693230
+                                               boy		0.655113
+                                              girl		0.594720
+                                            victim		0.552959
+                                         policeman		0.552003
+                                               old		0.542266
+                                               him		0.523941
+                                           soldier		0.517435
+                                         schoolboy		0.517148
+                                          knifeman		0.515697
+                                               men		0.501123
+                                            father		0.500220
+                                            mugger		0.492926
+                                          attacker		0.492632
+                                             thief		0.492608
+                                       policewoman		0.485647
+                                           himself		0.485117
+                                         pensioner		0.484290
+                                            robber		0.482279
+                                           drifter		0.477111
+                                           burglar		0.476173
+                                        girlfriend		0.475825
+                                               son		0.475737
+                                        schoolgirl		0.475134
+                                          heavyset		0.474963
+                                            jogger		0.474548
+                                            mother		0.464271
+                                         assailant		0.461885
+                                               guy		0.461751
+                                          stabbing		0.461603
+                                         drunkenly		0.459983
+                                          intruder		0.458346
+                                          passerby		0.452307
+                                               his		0.450666
+                                        accomplice		0.449398
+                                         youngster		0.449255
+                                           escapee		0.446702
+                                      motorcyclist		0.445254
+                                          stranger		0.443165
+Enter word or sentence (EXIT to break): 
+Word: woman  Position in vocabulary: 492
+
+                                              Word       Cosine distance
+------------------------------------------------------------------------
+                                               man		0.758578
+                                              girl		0.753471
+                                          teenager		0.679814
+                                            mother		0.665489
+                                               her		0.651797
+                                          daughter		0.624427
+                                               she		0.620377
+                                               boy		0.613356
+                                       grandmother		0.572344
+                                        schoolgirl		0.571436
+                                           husband		0.571285
+                                           herself		0.567010
+                                            victim		0.566664
+                                         boyfriend		0.559381
+                                       policewoman		0.546783
+                                          womanʼs		0.543168
+                                           toddler		0.537420
+                                        girlfriend		0.537136
+                                              wife		0.530390
+                                         motherʼs		0.519033
+                                             raped		0.499049
+                                            jogger		0.498732
+                                               old		0.498457
+                                             lover		0.494442
+                                         pensioner		0.491626
+                                          divorcee		0.487145
+                                            sister		0.483802
+                                        prostitute		0.482215
+                                            father		0.480780
+                                           fondled		0.478446
+                                      stepdaughter		0.477459
+                                          pregnant		0.476198
+                                         housewife		0.475532
+                                               men		0.473861
+                                         kidnapper		0.473684
+                                             widow		0.473602
+                                             niece		0.468788
+                                               son		0.466562
+                                             bride		0.465386
+                                        knifepoint		0.460799
+                               

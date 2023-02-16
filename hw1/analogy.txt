@@ -1,0 +1,102 @@
+./word-analogy vectors.bin 
+Enter three words (EXIT to break): man woman king
+
+Word: man  Position in vocabulary: 184
+
+Word: woman  Position in vocabulary: 492
+
+Word: king  Position in vocabulary: 1163
+
+                                              Word              Distance
+------------------------------------------------------------------------
+                                             queen              0.483500
+                                           monarch              0.417160
+                                          princess              0.416979
+                                            khesar              0.391161
+                                           empress              0.386425
+                                           kingʼs               0.376977
+                                             lebor              0.376915
+                                           bernice              0.376437
+                                            mswati              0.375516
+                                         elizabeth              0.374293
+                                           infanta              0.367312
+                                            ferial              0.366848
+                                           sirikit              0.366253
+                                             rania              0.360442
+                                          countess              0.356342
+                                            throne              0.350238
+                                             vania              0.350234
+                                           majesty              0.348331
+                                           coretta              0.342904
+                                          sihamoni              0.340660
+                                           zenobia              0.338551
+                                            adeney              0.338207
+                                           namgyel              0.338086
+                                          vandross              0.337738
+                                              ahau              0.336373
+                                            prince              0.334466
+                                        sirindhorn              0.333610
+                                              saxe              0.329627
+                                           dowager              0.327844
+                                            alveda              0.326920
+                                             lears              0.326835
+                                             tupou              0.326322
+                                           consort              0.325605
+                                              gish              0.325543
+                                        bedchamber              0.324541
+                                        grandniece              0.323441
+                                            corgis              0.322897
+                                             jigme              0.322827
+                                           muwenda              0.321928
+                                      mccorquodale              0.321839
+
+Enter three words (EXIT to break): chef food sculptor
+
+Word: chef  Position in vocabulary: 4779
+
+Word: food  Position in vocabulary: 425
+
+Word: sculptor  Position in vocabulary: 18604
+
+                                              Word              Distance
+------------------------------------------------------------------------
+                                        sculptures              0.371318
+                                        foodstuffs              0.367160
+                                         sculpture              0.367027
+                                          supplies              0.347620
+                                          textiles              0.345762
+                                        fertilizer              0.335988
+                                             grain              0.334767
+                                       agriculture              0.330751
+                                         sculptors              0.327601
+                                          imported              0.319647
+                                      agricultural              0.318815
+                                       fertilisers              0.315563
+                                           smelted              0.314530
+                                           statues              0.310911
+                                        sanitation              0.309270
+                                             parts              0.307345
+                                             goods              0.307198
+                                           potable              0.304302
+                                             crops              0.303686
+                                       earthenware              0.302042
+                                       greenhouses              0.301260
+                                             resin              0.297352
+                                          artisans              0.295772
+                                           textile              0.295099
+                                         granaries              0.292742
+                                          harvests              0.291127
+                                        perishable              0.290958
+                                         livestock              0.290111
+                                         materials              0.289851
+                                             wheat              0.287617
+                                              milk              0.286600
+                                        warehouses              0.286083
+                                        containers              0.285751
+                                           cartons              0.284977
+                                            melons              0.284901
+                                         chemicals              0.284403
+                                            supply              0.283115
+                                          artworks              0.283038
+                                             water              0.282831
+                                        carbofuran              0.281594
