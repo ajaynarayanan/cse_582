@@ -17,15 +17,16 @@ In this homework,
 #### Points to consider 
 
 * How does CBOW compose context embeddings?  
+    - The context embeddings are given by the input weight matrix. During the training process, average word embedding is computed across all the context 
+    words for a given input word. This average word embedding is dot producted with the output weight matrix, and then softmax operation is applied to compute the final loss. 
 * How does it compute word probability given context?    
-    - For each context word, we mutliply the one-hot encoding of the word with the hidden layer weight matrix, and mutliply their result with the final weight matrix. We apply softmax on the above product and compute the probability of the word given the context word. 
+    - For each context word, we mutliply the one-hot encoding of the word with the hidden layer weight matrix, and we compute an average context embedding. Then, we mutliply their result with the final weight matrix. We apply softmax on the above product and compute the probability of the word given the context word. 
 * How does it implement negative sampling?
     - The probability of selecting a negative sample word is given by the   
     $P(w_i) = \frac{f(w_i)^{\frac{3}{4}}}{\sum_{i=1}^{|V|} f(w_i) ^{\frac{3}{4}}}$, where $f(w_i)$ is the frequency of word $w_i$.  
     -  The code base implements this using `UnigramTable`, which is large 1D array of size 1e8. The entries in this table are word's index, and the number of times a word's index appears in the table is determined by $P(w_i) * table\_size$.
     - To select a negative sample, we just choose a random index between 0 and $table\_size$. Based on the properties of the table, we are more likely to choose words with high probability. 
-* Any other parameters apart from the word embeddings and context
-embeddings?
+* Any other parameters apart from the word embeddings and context embeddings?
     - vector dimensionality
     - size of the context window
     - size of the `UnigramTable` 

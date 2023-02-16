@@ -390,8 +390,8 @@ void *TrainModelThread(void *id) {
   real f, g;
   clock_t now;
   /*
-    neu1 - word embedding 
-    neu1e - word embedding error based on back-prop.
+    neu1 - average word embedding for the context words
+    neu1e - word embedding gradient based on back-prop.
   */
   real *neu1 = (real *)calloc(layer1_size, sizeof(real));
   real *neu1e = (real *)calloc(layer1_size, sizeof(real));
@@ -455,8 +455,10 @@ void *TrainModelThread(void *id) {
       // in -> hidden
       cw = 0;
       /*
-        This is where the main computation happens.  
-
+        This is where the main computation happens for CBOW. CBOW uses context words to predict the input word. 
+        We use a sliding window mechanism to generate the context and target word. 
+        Once the context words are generated, we compute the average context embedding and use this embedding 
+        to process further.
       */
       for (a = b; a < window * 2 + 1 - b; a++) if (a != window) {
         c = sentence_position - window + a;
@@ -473,6 +475,7 @@ void *TrainModelThread(void *id) {
           f = 0;
           l2 = vocab[word].point[d] * layer1_size;
           // Propagate hidden -> output
+          /* Dot product of average context embedding with the target word to compute final loss */
           for (c = 0; c < layer1_size; c++) f += neu1[c] * syn1[c + l2];
           if (f <= -MAX_EXP) continue;
           else if (f >= MAX_EXP) continue;
@@ -502,6 +505,7 @@ void *TrainModelThread(void *id) {
           if (f > MAX_EXP) g = (label - 1) * alpha;
           else if (f < -MAX_EXP) g = (label - 0) * alpha;
           else g = (label - expTable[(int)((f + MAX_EXP) * (EXP_TABLE_SIZE / MAX_EXP / 2))]) * alpha;
+          // back prop on the final output layer
           for (c = 0; c < layer1_size; c++) neu1e[c] += g * syn1neg[c + l2];
           for (c = 0; c < layer1_size; c++) syn1neg[c + l2] += g * neu1[c];
         }
@@ -512,6 +516,7 @@ void *TrainModelThread(void *id) {
           if (c >= sentence_length) continue;
           last_word = sen[c];
           if (last_word == -1) continue;
+          // back-prop to correct the embedding, i.e, input weight matrix
           for (c = 0; c < layer1_size; c++) syn0[c + last_word * layer1_size] += neu1e[c];
         }
       }
@@ -589,8 +594,11 @@ void TrainModel() {
   InitNet();
   if (negative > 0) InitUnigramTable();
   start = clock();
+  /* Each thread operates on different data segment */
   for (a = 0; a < num_threads; a++) pthread_create(&pt[a], NULL, TrainModelThread, (void *)a);
   for (a = 0; a < num_threads; a++) pthread_join(pt[a], NULL);
+  
+  /* Save the vectors for each word in output file */
   fo = fopen(output_file, "wb");
   if (classes == 0) {
     // Save the word vectors
